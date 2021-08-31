@@ -1,8 +1,0 @@
-User Story:
-As a business owner, I want to give away excess furniture I have to the website owners, so that they can make better use of them. 
-
-Acceptance Criteria:
-- Ability to donate excess furniture
-- The furniture will be picked up
-- The furniture will go to those who need it more
-- No overflowing storage

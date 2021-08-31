@@ -1,8 +1,0 @@
-User Story:
-As a supermarket manager, I want to donate non perishable food items, so that they can be provided to those who need it. 
-
-Acceptance Criteria:
-- Ability to donate food
-- Non perishable items are easy to pack
-- It will be of great benefit to those who need it more
-- No overstocking of non perishable food items
