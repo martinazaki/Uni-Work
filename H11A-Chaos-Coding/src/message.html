@@ -1,0 +1,51 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module message</title>
+<meta charset="utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>message</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/tmp_amd/cage/export/cage/4/z5264835/2020/COMP1531/H11A-Chaos-Coding/src/message.py">/tmp_amd/cage/export/cage/4/z5264835/2020/COMP1531/H11A-Chaos-Coding/src/message.py</a></font></td></tr></table>
+    <p><tt>Message&nbsp;Functions.</tt></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="helpers.html">helpers</a><br>
+</td><td width="25%" valign=top><a href="message_helpers.html">message_helpers</a><br>
+</td><td width="25%" valign=top><a href="sched.html">sched</a><br>
+</td><td width="25%" valign=top><a href="time.html">time</a><br>
+</td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-message_edit"><strong>message_edit</strong></a>(token, message_id, message)</dt><dd><tt>Edits&nbsp;message&nbsp;if&nbsp;the&nbsp;user&nbsp;is&nbsp;authorised.</tt></dd></dl>
+ <dl><dt><a name="-message_pin"><strong>message_pin</strong></a>(token, message_id)</dt><dd><tt>Pin&nbsp;message&nbsp;if&nbsp;valid.</tt></dd></dl>
+ <dl><dt><a name="-message_react"><strong>message_react</strong></a>(token, message_id, react_id)</dt><dd><tt>Reacts&nbsp;to&nbsp;a&nbsp;valid&nbsp;message.</tt></dd></dl>
+ <dl><dt><a name="-message_remove"><strong>message_remove</strong></a>(token, message_id)</dt><dd><tt>Removes&nbsp;message&nbsp;if&nbsp;the&nbsp;user&nbsp;is&nbsp;authorised.</tt></dd></dl>
+ <dl><dt><a name="-message_send"><strong>message_send</strong></a>(token, channel_id, message)</dt><dd><tt>A&nbsp;message_id&nbsp;is&nbsp;generated,&nbsp;message_data&nbsp;is&nbsp;updated&nbsp;with&nbsp;function<br>
+inputs&nbsp;and&nbsp;appended&nbsp;to&nbsp;channel_data.</tt></dd></dl>
+ <dl><dt><a name="-message_send_later"><strong>message_send_later</strong></a>(token, channel_id, message, time_sent)</dt><dd><tt>Send&nbsp;a&nbsp;message&nbsp;to&nbsp;a&nbsp;channel&nbsp;at&nbsp;a&nbsp;specified&nbsp;time&nbsp;in&nbsp;the&nbsp;future.</tt></dd></dl>
+ <dl><dt><a name="-message_unpin"><strong>message_unpin</strong></a>(token, message_id)</dt><dd><tt>Unpin&nbsp;message&nbsp;if&nbsp;valid.</tt></dd></dl>
+ <dl><dt><a name="-message_unreact"><strong>message_unreact</strong></a>(token, message_id, react_id)</dt><dd><tt>Unreacts&nbsp;to&nbsp;a&nbsp;valid&nbsp;message.</tt></dd></dl>
+</td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#55aa55">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><strong>GLOBAL_DATA</strong> = {'channels': [], 'n_channels': 0, 'n_messages': 0, 'n_users': 0, 'users': []}<br>
+<strong>MESSAGE_DATA</strong> = {'is_pinned': False, 'message': '', 'message_id': '', 'reacts': [], 'time_created': 1, 'u_id': ''}<br>
+<strong>REACT_DATA</strong> = {'is_this_user_reacted': False, 'react_id': '', 'u_ids': []}</td></tr></table>
+</body></html>

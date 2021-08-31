@@ -1,0 +1,38 @@
+1. Fragility (lines 15-17)
+Problem: 
+The software is built in a complex manner, where even the slightest change has a high risk of breaking the system.
+
+Fix:
+Avoid repetition and complex coding.
+
+
+2. Opacity (lines 19-26)
+Problem:
+The program's function is too long, thus difficult to understand.
+
+Fix:
+Break long function into smaller subfunctions to make it simpler to read, Keep It Simple Stupid (KISS).
+
+
+3. No comments (all lines)
+Problem:
+There are no comments which makes it harder to understand.
+
+Fix:
+Add comments that explain why a snippet of code exists.
+
+
+4. Needless Complexity (lines 35-50)
+Problem:
+The program is more complex than needed.
+
+Fix:
+Break the code into smaller subfunctions and use Top-to-Down Thinking.
+
+
+5. Needless Repetition (lines 12, 15)
+Problem:
+The repeated code makes the function look more complex and longer than it should be.
+
+Fix:
+The lines can be reused under a single abstraction, Don't Repeat Yourself (DRY).
