@@ -1,0 +1,31 @@
+body {
+  font-family: "Roboto";
+  margin: 0;
+
+  --primary-blue: #0a64a0;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+a {
+  color: var(--primary-blue);
+}
+
+.main-container {
+  width: 640px;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 64px;
+}
+
+.main-container label {
+  display: inline-block;
+  min-width: 192px;
+}
+
+#register {
+  display: none;
+}

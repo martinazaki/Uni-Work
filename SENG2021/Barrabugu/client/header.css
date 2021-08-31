@@ -1,0 +1,84 @@
+body {
+  font-family: "Roboto";
+  margin: 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+
+  --primary-blue: #0a64a0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.display-none {
+  display: none !important;
+}
+
+.email-to-copy {
+  cursor: pointer;
+}
+
+.email-to-copy:hover {
+  text-decoration: underline;
+}
+
+mark {
+  background: #cedaf7;
+}
+
+
+body.cursor-move .drag-handle,
+body.cursor-move {
+  cursor: move !important;
+}
+
+.header {
+  border-bottom: 1px solid #ddd;
+  padding: 8px 0;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  height: 54px;
+  align-items: center;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.header-name {
+  margin: 0;
+}
+
+.header-role {
+  margin: 0;
+  color: grey;
+  font-weight: normal;
+}
+
+.header-nav {
+  list-style: none;
+  padding: 0;
+  margin-left: 32px;
+}
+
+.header-nav li {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.header-nav a {
+  color: black;
+  text-decoration: none;
+}
+
+.header-nav a:hover {
+  text-decoration: underline;
+}

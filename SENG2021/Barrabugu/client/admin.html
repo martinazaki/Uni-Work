@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="admin.css" />
+    <title>Admin dashboard</title>
+  </head>
+  <body>
+    <header class="header">
+      <img class="header-logo" src="imgs/logo.svg">
+      <div class="header-left">
+        <h3 class="header-name">Harrison Young</h3>
+        <h4 class="header-role">Admin dashboard</h4>
+      </div>
+      <ul class="header-nav">
+        <li><a href="/admin.html">Admin Dashboard</a></li>
+        <li><a href="/student.html">Student Dashboard</a></li>
+      </ul>
+    </header>
+
+    <form class="filter" action="#" id="filter-form">
+      <input
+        type="search"
+        class="filter-input"
+        placeholder='eg. first last, The Cool Team'
+        id="filter"
+        autocomplete="off" />
+        <button class="filter-button">Filter</button>
+    </form>
+
+    <main class="main-container">
+      <section class="teamless-container">
+        <h2>Teamless</h2>
+        <p class="no-result">No result</p>
+        <ul class="teamless" id="teamless">
+        </ul>
+      </section>
+      <section class="teams-container">
+        <h2>Teams</h2>
+        <p class="no-result">No result</p>
+        <div class="teams" id="teams">
+        </div>
+      </section>
+    </main>
+
+    <div class="sdp display-none" id="student-details-popup">
+      <div class="sdp-topbar">
+        <span>Student Details</span>
+        <button class="sdp-close" id="sdp-close">&times;</button>
+      </div>
+      <div class="sdp-content">
+        <h3 class="sdp-name" id='sdp-name'>Jiaqi Zhu</h3>
+        <h5 class="sdp-email email-to-copy" id='sdp-email' title="Click to copy">
+          z5862039@unsw.edu.au
+        </h5>
+        <p class="sdp-description" id='sdp-description'>
+          Aiming for a HD. Software engineering, third year.
+        </p>
+      </div>
+    </div>
+
+    <div class="display-none">
+      <!-- used to clone and then insert into the dom -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.867 33.867" id="svg-drag-handle">
+        <path style="fill: currentColor" d="M7.01 5.875A2.472 2.472 0 004.54 8.347 2.472 2.472 0 007.01 10.82a2.472 2.472 0 002.472-2.472 2.472 2.472 0 00-2.472-2.472zm9.923 0a2.472 2.472 0 00-2.472 2.472 2.472 2.472 0 002.472 2.472 2.472 2.472 0 002.473-2.472 2.472 2.472 0 00-2.473-2.472zm9.923 0a2.472 2.472 0 00-2.472 2.472 2.472 2.472 0 002.472 2.472 2.472 2.472 0 002.472-2.472 2.472 2.472 0 00-2.472-2.472zM7.01 14.461a2.472 2.472 0 00-2.472 2.472 2.472 2.472 0 002.472 2.473 2.472 2.472 0 002.472-2.473 2.472 2.472 0 00-2.472-2.472zm9.922 0a2.472 2.472 0 00-2.472 2.472 2.472 2.472 0 002.472 2.473 2.472 2.472 0 002.473-2.473 2.472 2.472 0 00-2.473-2.472zm9.923 0a2.472 2.472 0 00-2.472 2.472 2.472 2.472 0 002.472 2.473 2.472 2.472 0 002.472-2.473 2.472 2.472 0 00-2.472-2.472zM7.01 23.047a2.472 2.472 0 00-2.472 2.472 2.472 2.472 0 002.472 2.473 2.472 2.472 0 002.472-2.473 2.472 2.472 0 00-2.472-2.472zm9.922 0a2.472 2.472 0 00-2.472 2.472 2.472 2.472 0 002.472 2.473 2.472 2.472 0 002.473-2.473 2.472 2.472 0 00-2.473-2.472zm9.923 0a2.472 2.472 0 00-2.472 2.472 2.472 2.472 0 002.472 2.473 2.472 2.472 0 002.472-2.473 2.472 2.472 0 00-2.472-2.472z"/>
+      </svg>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script>
+    <script src="EM.js"></script>
+    <script src="Sync.js"></script>
+    <script src='sortable.js'></script>
+    <script src='utils.js'></script>
+    <script src="MainContainer.js"></script>
+    <script src="Filter.js"></script>
+    <script src="StudentDetailsPopup.js"></script>
+    <script src="index.js"></script>
+   </body>
+</html>

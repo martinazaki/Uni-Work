@@ -1,0 +1,103 @@
+.teams, .teamless {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 432px);
+  justify-content: space-around;
+  grid-gap: 24px;
+  margin: 12px;
+  margin-bottom: 32px;
+}
+
+.team-title {
+  background-color: var(--primary-blue);
+  color: white;
+  margin: 0;
+  height: 32px;
+  line-height: 32px;
+  padding: 0;
+  padding-left: 12px;
+  display: flex;
+}
+
+.team-title-name {
+  flex: 1;
+}
+
+.team-title-apply {
+  color: inherit;
+  background: none;
+  font-family: inherit;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0 12px;
+  background-color: #2374aa;
+}
+
+.team-title-apply:hover {
+  text-decoration: underline;
+  background-color: #3b83b3;
+}
+
+.main-container {
+  overflow: auto;
+}
+
+nav {
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+nav a {
+  color: var(--primary-blue);
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  margin-top: 0;
+  padding-left: 16px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+.team-students {
+  border: 1px solid lightgrey;
+  border-top: none;
+}
+
+.student {
+  padding: 4px 12px;
+}
+
+.student-name {
+  margin: 0;
+  margin-bottom: 4px;
+  margin-top: 8px;
+  display: inline-block;
+  margin-right: 8px;
+  vertical-align: baseline;
+}
+
+.student-email {
+  margin: 0;
+  color: grey;
+  font-weight: normal;
+  display: inline-block;
+}
+
+.student-description {
+  margin: 0;
+  margin-top: 4px;
+}
+
+.teamless .student {
+  border: 1px solid lightgrey;
+}

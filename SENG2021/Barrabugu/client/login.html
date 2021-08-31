@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <title>Barrabugu Team Maker</title>
+</head>
+<body>
+
+  <h1>Barrabugu team maker</h1>
+
+  <main class="main-container">
+    <section id="login">
+      <h2>Login</h2>
+      <form id="form-login">
+        <p>
+          <label for="login-email">Email: </label>
+          <input type="email" name="email" id="login-email" placeholder="foo@bar.com">
+        </p>
+        <p>
+          <label for="login-password">Password: </label>
+          <input type="password" name="password" id="login-password">
+        </p>
+        <p>
+          <input type="submit" value="Login">
+        </p>
+      </form>
+      <p>Don't have an account? <a href="#" id="show-register">Register</a></p>
+    </section>
+
+    <section id="register">
+      <h2>Register</h2>
+      <form id="form-register">
+        <p>
+          <label for="register-email">Email: </label>
+          <input type="email" name="email" id="register-email" placeholder="foo@bar.com">
+        </p>
+        <p>
+          <label for="register-password">Password: </label>
+          <input type="password" name="password" id="register-password">
+        </p>
+        <p>
+          <label for="register-password-confirm">Confirm password: </label>
+          <input type="password" name="password-confirm" id="register-password-confirm">
+        </p>
+        <p>
+          <input type="submit" value="Register">
+        </p>
+      </form>
+      <p>Already have an account (if you are a student, you probably do)? <a href="#" id="show-login">Login</a></p>
+    </section>
+  </main>
+
+  <script src="login.js"></script>
+
+</body>
+</html>
