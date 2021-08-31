@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+
+#define MAX_SIZE 1000
+
+int main(void) {
+    char c[MAX_SIZE];
+    printf("Enter a string: ");
+    fgets(c, MAX_SIZE -1, stdin);
+    
+    int i = 0;
+    while(i < MAX_SIZE) {
+        if(c[i] != '\0' && c[i] != '\n') {
+            printf("%c", c[i]);
+            if(c[i+1] != '\0') {
+                printf("\n");
+            } else {
+                i = MAX_SIZE;
+            }
+            
+        }
+        i++;
+        
+    }
+     return 0;
+}
