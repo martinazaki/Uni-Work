@@ -1,0 +1,43 @@
+// Calculates the straight-line distance between 2 points in Euclidean space
+
+// Written by Martina 
+// 19/03/2019
+
+#include <stdio.h>
+#include <math.h>
+
+#define MAX_SIZE 1000
+
+int main(void) {
+    int length;
+    int vector1[MAX_SIZE];
+    int vector2[MAX_SIZE];
+    
+    printf("Enter vector length: ");
+      scanf("%d", &length);
+    
+int read_vectors (int vector1[MAX_SIZE], int vector2[MAX_SIZE], int length);
+    int i = 0;
+    printf("Enter vector 1: ");
+    while(i < length) {
+      scanf("%d", &vector1[i]);
+      
+      i++;
+    }
+    
+    i = 0;
+    printf("Enter vector 2: ");
+    while(i < length) {
+      scanf("%d", &vector2[i]);
+      
+      i++; 
+    }
+
+    double distance = 0.000000;
+    if(distance == sqrt(((vector2 - vector1)^2) + ((vector2 - vector1)^2) + ((vector2 - vector1)^2) + ((vector2 - vector1)^2))) {
+    printf("Euclidean distance: ");
+    scanf("%lf", &distance);
+    }
+
+    return 0;
+    }
